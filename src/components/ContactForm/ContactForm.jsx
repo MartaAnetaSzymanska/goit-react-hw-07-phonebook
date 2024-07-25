@@ -29,7 +29,7 @@ export const ContactForm = () => {
     if (isContactExist) {
       alert(`Contact with the name: ${nameValue} already exists.`);
     } else {
-      dispatch(addContact({ name: nameValue, phone: numberValue, id: nanoid }));
+      dispatch(addContact({ name: nameValue, phone: numberValue }));
       form.reset();
     }
   };
